@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="110.0" prefWidth="631.0" style="-fx-background-color: #40E0D0;">
+            <children>
+                <Label layoutX="228.0" layoutY="23.0" prefHeight="64.0" prefWidth="210.0" text="USER MENU " textFill="#fffdfd">
+                    <font>
+                        <Font name="Pristina" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="228.0" fitWidth="363.0" layoutX="14.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asserts/CoFinder.png" />
+            </image>
+        </ImageView>
+      <ButtonBar layoutX="331.0" layoutY="166.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" text="WATAFACK" />
+        </buttons>
+      </ButtonBar>
+    </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PrintCompController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table" prefHeight="470.0" prefWidth="950.0">
+                          <columns>
+                            <TableColumn fx:id="NUM" prefWidth="24.800019085407257" text="№" />
+                            <TableColumn fx:id="TYPE" prefWidth="147.20000839233398" text="Тип" />
+                              <TableColumn fx:id="PROC_NAME" prefWidth="117.60002136230469" text="Процессор" />
+                              <TableColumn fx:id="FREQ" prefWidth="70.4000244140625" text="Частота" />
+                              <TableColumn fx:id="PROC_MEM" prefWidth="85.5999755859375" text="Оп.память" />
+                              <TableColumn fx:id="VIDEO_MEM" prefWidth="85.5999755859375" text="Видеопамять" />
+                              <TableColumn fx:id="DVD" prefWidth="92.0" text="Привод" />
+                              <TableColumn fx:id="CORES" prefWidth="81.5999755859375" text="Кол-во ядер" />
+                              <TableColumn fx:id="TYPE_DISPLAY" prefWidth="94.39996337890625" text="Тип дисплея" />
+                              <TableColumn fx:id="RESOLUTION" prefWidth="92.0" text="Разрешение" />
+                              <TableColumn fx:id="PRICE" prefWidth="65.5999755859375" text="Цена" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>

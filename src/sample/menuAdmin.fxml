@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="631.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="110.0" prefWidth="631.0" style="-fx-background-color: lightblue;">
+            <children>
+                <Label layoutX="159.0" layoutY="23.0" prefHeight="64.0" prefWidth="279.0" text="ADMIN MENU!!!" textFill="#fffdfd">
+                    <font>
+                        <Font name="Pristina" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <ImageView fitHeight="138.0" fitWidth="117.0" layoutX="514.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/CoFinder.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addButton" layoutX="524.0" layoutY="129.0" mnemonicParsing="false" onAction="#addComputer" text="Добавить" />
+      <Button fx:id="editButton" layoutX="396.0" layoutY="167.0" mnemonicParsing="false" onAction="#UpDate" text="Редактировать" />
+      <Button fx:id="showButton" layoutX="513.0" layoutY="167.0" mnemonicParsing="false" onAction="#printComputer" text="Просмотреть" />
+      <Button fx:id="searchButton" layoutX="420.0" layoutY="129.0" mnemonicParsing="false" text="Поиск" />
+      <Button fx:id="authAdminCancelButton" layoutX="283.0" layoutY="335.0" mnemonicParsing="false" onAction="#begin" text="Назад" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ComputerController">
+   <children>
+      <TabPane layoutX="30.0" layoutY="7.0" prefHeight="400.0" prefWidth="817.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="632.0">
+                     <children>
+                        <TextField fx:id="price" layoutX="127.0" layoutY="23.0" prefHeight="26.0" prefWidth="66.0" promptText="price" />
+                        <ChoiceBox fx:id="type_comp" layoutX="426.0" layoutY="25.0" prefWidth="150.0" />
+                        <TextField fx:id="proc_name" layoutX="101.0" layoutY="80.0" onAction="#addComputer" prefHeight="26.0" prefWidth="118.0" promptText="processor_name" />
+                        <CheckBox fx:id="yes" layoutX="105.0" layoutY="142.0" mnemonicParsing="false" onAction="#YesBox" text="Есть" />
+                        <Label fx:id="dvd" layoutX="24.0" layoutY="142.0" text="DVD-привод" />
+                        <CheckBox fx:id="no" layoutX="160.0" layoutY="142.0" mnemonicParsing="false" onAction="#NoBox" text="Нет" />
+                        <RadioButton fx:id="three" layoutX="668.0" layoutY="76.0" mnemonicParsing="false" text="4 GB" />
+                        <RadioButton fx:id="one" layoutX="668.0" layoutY="38.0" mnemonicParsing="false" text="1 GB" />
+                        <RadioButton fx:id="two" layoutX="668.0" layoutY="56.0" mnemonicParsing="false" text="2 GB" />
+                        <RadioButton fx:id="four" layoutX="668.0" layoutY="98.0" mnemonicParsing="false" text="8 GB" />
+                        <RadioButton fx:id="five" layoutX="668.0" layoutY="121.0" mnemonicParsing="false" selected="true" text="16 GB" />
+                        <Label layoutX="302.0" layoutY="28.0" text="Тип компьютера" />
+                        <Label fx:id="video_mem" layoutX="663.0" layoutY="19.0" text="Видеокарта" />
+                        <Label fx:id="proc_mem" layoutX="657.0" layoutY="156.0" text="Оперативная память" />
+                        <RadioButton fx:id="onep" layoutX="684.0" layoutY="181.0" mnemonicParsing="false" text="1 GB" />
+                        <RadioButton fx:id="twop" layoutX="685.0" layoutY="206.0" mnemonicParsing="false" text="2 GB" />
+                        <RadioButton fx:id="threep" layoutX="686.0" layoutY="232.0" mnemonicParsing="false" text="4 GB" />
+                        <RadioButton fx:id="fourp" layoutX="687.0" layoutY="256.0" mnemonicParsing="false" text="6 GB" />
+                        <RadioButton fx:id="fivep" layoutX="688.0" layoutY="281.0" mnemonicParsing="false" text="8 GB" />
+                        <RadioButton fx:id="sixp" layoutX="501.0" layoutY="294.0" mnemonicParsing="false" selected="true" text="16 GB" />
+                        <ChoiceBox fx:id="type_display" layoutX="429.0" layoutY="108.0" prefWidth="150.0" />
+                        <Label layoutX="338.0" layoutY="112.0" text="Тип матрицы" />
+                        <ChoiceBox fx:id="resolution" layoutX="435.0" layoutY="176.0" prefHeight="26.0" prefWidth="138.0" />
+                        <Label layoutX="285.0" layoutY="190.0" text="Разрешение монитора" />
+                        <Label layoutX="38.0" layoutY="227.0" text="Количество  ядер" />
+                        <ChoiceBox fx:id="cores" layoutX="36.0" layoutY="247.0" prefHeight="26.0" prefWidth="56.0" />
+                        <Button fx:id="addButton" layoutX="176.0" layoutY="331.0" mnemonicParsing="false" onAction="#AddComp" text="Добавить" />
+                        <TextField fx:id="proc_freq" layoutX="235.0" layoutY="243.0" promptText="frequency" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
